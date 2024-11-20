@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import "./styles.scss";
 
-// import required modules
+// import required module
 import { Autoplay, Pagination } from "swiper/modules";
 
 import HeadingImg from "../../assets/images/features-heading.svg";
