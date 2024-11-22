@@ -18,8 +18,8 @@ const PlayStoreBtn = ({
   return (
     <div
       className="btn-ctm btn-ctm-new playStoreBtn btn rounded-4 m-0 p-0 position-relative overflow-hidden w-100 justify-content-center"
-      style={{ background: btnCtmBackground, boxShadow: boxShadow }}
       onClick={()=>handleNavigate()}
+      style={{ background: btnCtmBackground, boxShadow: boxShadow }}
     >
       <div
         className="line-upper-overlay row m-0 p-0 position-absolute w-100 "

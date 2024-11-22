@@ -34,6 +34,7 @@ import featuresCardHead2 from "../assets/images/features-card-head-2.svg";
 import featuresContentList1 from "../assets/images/features-content-list-1.svg";
 import featuresContentList2 from "../assets/images/features-content-list-2.svg";
 import aboutUrduBg from "../assets/images/HISTORIC-PAGE.svg";
+import aboutUrduBgNew from "../assets/images/HISTORIC PAGE-new.svg";
 import aboutUrduBgMobile from "../assets/images/about-urdu-bg-mobile.svg";
 import aboutUrduBg1k from "../assets/images/about-urdu-bg-13-15-1.svg";
 import VideoPlayerFrame from "../assets/images/video-player-frame.svg";
@@ -788,6 +789,11 @@ const Home = () => {
             alt="About Urdu Background"
             className="about-urdu-bg d-xxl-flex d-none m-0 p-0 w-100"
           />
+          {/* <img
+            src={aboutUrduBgNew}
+            alt="About Urdu Background"
+            className="about-urdu-bg d-xxl-flex d-none m-0 p-0 w-100"
+          /> */}
           <img
             src={aboutUrduBg1k}
             alt="About Urdu Background"
@@ -857,7 +863,7 @@ const Home = () => {
                   HISTORY OF URDU
                 </h1>
               </div>
-
+              
               <div className="history-urdu col-lg-5 m-0 p-0 d-flex align-content-end justify-content-lg-end justify-content-center ">
                 <div
                   className="video-player position-relative d-flex justify-content-center align-items-center"
