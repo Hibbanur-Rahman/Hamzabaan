@@ -34,6 +34,7 @@ import featuresCardHead2 from "../assets/images/features-card-head-2.svg";
 import featuresContentList1 from "../assets/images/features-content-list-1.svg";
 import featuresContentList2 from "../assets/images/features-content-list-2.svg";
 import aboutUrduBg from "../assets/images/HISTORIC-PAGE.svg";
+import aboutUrduBgNew from "../assets/images/HISTORIC PAGE-new.svg";
 import aboutUrduBgMobile from "../assets/images/about-urdu-bg-mobile.svg";
 import aboutUrduBg1k from "../assets/images/about-urdu-bg-13-15-1.svg";
 import VideoPlayerFrame from "../assets/images/video-player-frame.svg";
@@ -318,7 +319,7 @@ const Home = () => {
               {isTeacherIframeShow ? (
                 <iframe
                   className="urdu-iframe"
-                  src="https://www.youtube.com/embed/IUhCA1ZLV7c?si=Y8UygaMEFXv3wCGq"
+                  src="https://www.youtube.com/embed/YOhtkzlKyFQ?si=VWgD5P9btJ2EOsUb"
                   title="YouTube video player"
                   frameborder="0"
                   allow="fullscreen;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -376,6 +377,7 @@ const Home = () => {
                 outerBtnBorder="1px solid #fff"
                 innerBtnBorder="2px dashed #fff"
                 lineUpperOverlayBg="#006465"
+                link="https://play.google.com/store/apps/details?id=com.devhz.humzabaan"
               />
             </div>
             <div className="mt-4 " style={{ width: "15rem" }}>
@@ -389,6 +391,7 @@ const Home = () => {
                 outerBtnBorder="1px solid rgb(7, 90, 94)"
                 innerBtnBorder="2px dashed rgba(7, 90, 94, 1)"
                 lineUpperOverlayBg="#b3cb147e"
+                link="https://apps.apple.com/ae/app/humzabaan/id6736941196"
               />
             </div>
           </div>
@@ -511,7 +514,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div
+        <div
           className="features-card row m-0 p-0 mt-lg-5 pb-lg-5 position-relative"
           id="features-card-section"
         >
@@ -765,13 +768,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div> */}
-         <div
+        </div>
+         {/* <div
           className="features-card row m-0 p-0 mt-lg-5 pb-lg-5 position-relative"
           id="features-card-section"
         >
           <SliderFeatures/>
-        </div>
+        </div> */}
       </div>
       <FeaturesModal />
 
@@ -786,6 +789,11 @@ const Home = () => {
             alt="About Urdu Background"
             className="about-urdu-bg d-xxl-flex d-none m-0 p-0 w-100"
           />
+          {/* <img
+            src={aboutUrduBgNew}
+            alt="About Urdu Background"
+            className="about-urdu-bg d-xxl-flex d-none m-0 p-0 w-100"
+          /> */}
           <img
             src={aboutUrduBg1k}
             alt="About Urdu Background"
@@ -855,7 +863,7 @@ const Home = () => {
                   HISTORY OF URDU
                 </h1>
               </div>
-
+              
               <div className="history-urdu col-lg-5 m-0 p-0 d-flex align-content-end justify-content-lg-end justify-content-center ">
                 <div
                   className="video-player position-relative d-flex justify-content-center align-items-center"

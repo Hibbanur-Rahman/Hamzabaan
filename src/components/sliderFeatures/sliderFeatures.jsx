@@ -30,12 +30,171 @@ export default function App() {
           spaceBetween={20}
           pagination={{
             clickable: true,
+            dynamicBullets: true,
           }}
-          autoplay={true}
+          // autoplay={true}
           loop={true}
           modules={[Pagination,Autoplay]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1, // Show one slide for devices with width 0px and above
+              spaceBetween: 10, // Adjust spacing for smaller screens
+            },
+            768: {
+              slidesPerView: 2, // Show two slides for devices with width 768px and above
+              // spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3, // Default configuration for devices with width 1024px and above
+              // spaceBetween: 20,
+            },
+          }}
           className="features-Swiper"
         >
+          <SwiperSlide>
+            <div className="position-relative d-flex align-items-center justify-content-center features-slide">
+              <img src={sliderBg} alt="" className="slider-bg-img" />
+              <div className="position-absolute d-flex flex-column align-items-center justify-content-center">
+                <div className="thumbnail-section d-flex flex-column align-items-center justify-content-center">
+                  <img
+                    src={featuresVideoThumbnail}
+                    alt=""
+                    className="features-video-thumbnail-img m-0 p-0"
+                  />
+                  <img
+                    src={VideoPlayBtn}
+                    alt=""
+                    className="video-play-btn position-absolute"
+                  />
+                  <img src={FeaturesSlideLine} alt="" className="m-0 p-0" />
+                </div>
+                <p className="col-9 text-center text-black my-2 kiddo-font">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+                <div className="w-auto mt-3">
+                  <Button
+                    content="LEARN MORE"
+                    btnCtmBackground="radial-gradient(#3e60f4 , #041ec8)"
+                    boxShadow="0px 4px #00139e"
+                    lineBackground="#3e60f4"
+                    outerBtnBorder="1px solid #000d9c"
+                    innerBtnBorder="2px dashed #fff"
+                    lineUpperOverlayBg="#1d3ae2 "
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="position-relative d-flex align-items-center justify-content-center features-slide">
+              <img src={sliderBg} alt="" className="slider-bg-img" />
+              <div className="position-absolute d-flex flex-column align-items-center justify-content-center">
+                <div className="thumbnail-section d-flex flex-column align-items-center justify-content-center">
+                  <img
+                    src={featuresVideoThumbnail}
+                    alt=""
+                    className="features-video-thumbnail-img m-0 p-0"
+                  />
+                  <img
+                    src={VideoPlayBtn}
+                    alt=""
+                    className="video-play-btn position-absolute"
+                  />
+                  <img src={FeaturesSlideLine} alt="" className="m-0 p-0" />
+                </div>
+                <p className="col-9 text-center text-black my-2 kiddo-font">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+                <div className="w-auto mt-3">
+                  <Button
+                    content="LEARN MORE"
+                    btnCtmBackground="radial-gradient(#3e60f4 , #041ec8)"
+                    boxShadow="0px 4px #00139e"
+                    lineBackground="#3e60f4"
+                    outerBtnBorder="1px solid #000d9c"
+                    innerBtnBorder="2px dashed #fff"
+                    lineUpperOverlayBg="#1d3ae2 "
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="position-relative d-flex align-items-center justify-content-center features-slide">
+              <img src={sliderBg} alt="" className="slider-bg-img" />
+              <div className="position-absolute d-flex flex-column align-items-center justify-content-center">
+                <div className="thumbnail-section d-flex flex-column align-items-center justify-content-center">
+                  <img
+                    src={featuresVideoThumbnail}
+                    alt=""
+                    className="features-video-thumbnail-img m-0 p-0"
+                  />
+                  <img
+                    src={VideoPlayBtn}
+                    alt=""
+                    className="video-play-btn position-absolute"
+                  />
+                  <img src={FeaturesSlideLine} alt="" className="m-0 p-0" />
+                </div>
+                <p className="col-9 text-center text-black my-2 kiddo-font">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+                <div className="w-auto mt-3">
+                  <Button
+                    content="LEARN MORE"
+                    btnCtmBackground="radial-gradient(#3e60f4 , #041ec8)"
+                    boxShadow="0px 4px #00139e"
+                    lineBackground="#3e60f4"
+                    outerBtnBorder="1px solid #000d9c"
+                    innerBtnBorder="2px dashed #fff"
+                    lineUpperOverlayBg="#1d3ae2 "
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="position-relative d-flex align-items-center justify-content-center features-slide">
+              <img src={sliderBg} alt="" className="slider-bg-img" />
+              <div className="position-absolute d-flex flex-column align-items-center justify-content-center">
+                <div className="thumbnail-section d-flex flex-column align-items-center justify-content-center">
+                  <img
+                    src={featuresVideoThumbnail}
+                    alt=""
+                    className="features-video-thumbnail-img m-0 p-0"
+                  />
+                  <img
+                    src={VideoPlayBtn}
+                    alt=""
+                    className="video-play-btn position-absolute"
+                  />
+                  <img src={FeaturesSlideLine} alt="" className="m-0 p-0" />
+                </div>
+                <p className="col-9 text-center text-black my-2 kiddo-font">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore
+                </p>
+                <div className="w-auto mt-3">
+                  <Button
+                    content="LEARN MORE"
+                    btnCtmBackground="radial-gradient(#3e60f4 , #041ec8)"
+                    boxShadow="0px 4px #00139e"
+                    lineBackground="#3e60f4"
+                    outerBtnBorder="1px solid #000d9c"
+                    innerBtnBorder="2px dashed #fff"
+                    lineUpperOverlayBg="#1d3ae2 "
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
           <SwiperSlide>
             <div className="position-relative d-flex align-items-center justify-content-center features-slide">
               <img src={sliderBg} alt="" className="slider-bg-img" />

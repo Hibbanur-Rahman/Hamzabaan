@@ -5,6 +5,7 @@ import NavbarBg from "../assets/images/Rectangle-5.png";
 import NavbarBgMobile from "../assets/images/NavbarBgMobile.png";
 import logo from "../assets/images/Humzabaan_MAIN_LOGO.svg";
 import ButtonNew from "./buttonNew";
+import DownloadModal from "./downloadModal";
 const Navbar = () => {
   return (
     <>
@@ -39,7 +40,11 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="col-3 d-flex align-items-center justify-content-center">
-                <ScrollLink to="features-section" className="text-decoration-none"  style={{ cursor: "pointer" }}>
+                <ScrollLink
+                  to="features-section"
+                  className="text-decoration-none"
+                  style={{ cursor: "pointer" }}
+                >
                   FEATURES
                 </ScrollLink>
               </div>
@@ -122,31 +127,42 @@ const Navbar = () => {
                 <Link to="#" className="text-decoration-none mb-3 mt-3">
                   CURRICULUM
                 </Link>
-                <ScrollLink to="features-section" className="text-decoration-none mb-3 mt-3"  data-bs-dismiss="offcanvas"
-                aria-label="Close">
+                <ScrollLink
+                  to="features-section"
+                  className="text-decoration-none mb-3 mt-3"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
                   FEATURES
                 </ScrollLink>
                 <ScrollLink
                   to="contact-us-section"
                   className="text-decoration-none mb-3 mt-3"
-                   data-bs-dismiss="offcanvas"
-                aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
                 >
                   CONTACT
                 </ScrollLink>
-                <ButtonNew
-                  content="DOWNLOAD NOW"
-                  btnCtmBackground="radial-gradient(#C3D80A, #BED30A, #AFC50C, #98AD10, #8AA012)"
-                  boxShadow="0px 4px #5b6404"
-                  lineBackground="#dcf314"
-                  outerBtnBorder="1px solid rgb(7, 90, 94)"
-                  innerBtnBorder="2px dashed rgba(7, 90, 94, 1)"
-                  lineUpperOverlayBg="#b3cb147e"
-                />
+                <div
+                  className=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#downloadModal"
+                >
+                  <ButtonNew
+                    content="DOWNLOAD NOW"
+                    btnCtmBackground="radial-gradient(#C3D80A, #BED30A, #AFC50C, #98AD10, #8AA012)"
+                    boxShadow="0px 4px #5b6404"
+                    lineBackground="#dcf314"
+                    outerBtnBorder="1px solid rgb(7, 90, 94)"
+                    innerBtnBorder="2px dashed rgba(7, 90, 94, 1)"
+                    lineUpperOverlayBg="#b3cb147e"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <DownloadModal/>
       </div>
     </>
   );
