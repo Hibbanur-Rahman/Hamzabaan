@@ -12,7 +12,6 @@ const PlayStoreBtn = ({
   lineUpperOverlayBg,
   link,
 }) => {
-
   const handleNavigate=()=>{
     window.open(link,"_blank")
   }
